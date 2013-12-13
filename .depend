@@ -1,2 +1,0 @@
-cluster.o: cluster.cpp cluster.h
-test.o: test.cpp cluster.h
