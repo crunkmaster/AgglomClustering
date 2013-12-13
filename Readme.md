@@ -18,9 +18,9 @@ or
 `./main < [file] [number of clusters] > [outfile]`
 
 ## Documentation 
-Inside the html and latex subdirectories there exist
-Doxygen-generated documentaion files at 'index.html' and 'refman.pdf'
-respectively. 
+Documentation can be generated using doxygen (just run `doxygen` if you are on a
+system with it installed) the documentation (html and latex) is output to the
+directory docs.
 
 ## Utilities 
 In the root directory there exists a useful perl script called
