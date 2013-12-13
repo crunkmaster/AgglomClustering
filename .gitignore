@@ -2,8 +2,7 @@
 *.o
 *.ii
 *.s
-html/*
-latex/*
+docs/*
 
 # OS generated files #
 .DS_Store
