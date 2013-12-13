@@ -13,6 +13,10 @@ main: $(OBJS)
 
 test:
 	./main < numbers 2
+
+docs:
+	doxygen
+
 clean:
 	-rm -f *.ii
 	-rm -f *.i
@@ -21,3 +25,4 @@ clean:
 	-rm -f *.h.gch
 	-rm -f *#
 	-rm -f *~
+	-rm -rf docs
