@@ -1,6 +1,6 @@
 #include <map>
 #include <list>
-#include "cluster.hpp"
+#include "Cluster.hpp"
 
 using namespace std;
 
