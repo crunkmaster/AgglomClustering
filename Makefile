@@ -1,5 +1,5 @@
-CXXFLAGS = -std=c++11 -save-temps
-CC = clang++
+CXXFLAGS = -std=c++0x -g -save-temps
+CC = g++
 SRCS = $(wildcard *.cpp)
 OBJS = $(patsubst %.cpp,%.o,$(SRCS))
 HEADERS = $(wildcard *.hpp)
@@ -11,11 +11,13 @@ main: $(OBJS)
 .depend: $(SRCS) $(HEADERS)
 	$(CC) $(CXXFLAGS) -MM $(SRCS) > .depend
 
+test:
+	./main < numbers 2
 clean:
-	-rm *.ii
-	-rm *.i
-	-rm *.s
-	-rm *.o
-	-rm *.h.gch
-	-rm *#
-	-rm *~
+	-rm -f *.ii
+	-rm -f *.i
+	-rm -f *.s
+	-rm -f *.o
+	-rm -f *.h.gch
+	-rm -f *#
+	-rm -f *~
